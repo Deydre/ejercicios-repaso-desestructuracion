@@ -1,4 +1,4 @@
-// EJERCICIOS DE DESESTRUCTURACIÓN
+// DESESTRUCTURACIÓN DE ARRAYS
 // ------------- 1 ---------------
 // Intercambio de valores en un array: 
 // Dado el array const numeros = [1, 2, 3, 4, 5], usa desestructuración para intercambiar el primer y el último valor del array.
@@ -30,7 +30,7 @@ console.log("-------------------")
 // Extraer valores en una función: 
 // Crea una función que reciba un array con nombres de frutas. Usa desestructuración para devolver el primer y el último elemento del array como un nuevo array. 
 
-//Por ejemplo, para el array ['manzana', 'plátano', 'naranja', 'kiwi'], deberías devolver ['manzana', 'kiwi'].
+// Por ejemplo, para el array ['manzana', 'plátano', 'naranja', 'kiwi'], deberías devolver ['manzana', 'kiwi'].
 
 const frutas = ['manzana', 'plátano', 'naranja', 'kiwi'];
 
@@ -48,7 +48,7 @@ console.log("-------------------")
 
 const datos = [['Juan', 25], ['Ana', 30], ['Luis', 28]];
 
-let nombres= datos.map(([nombre]) => nombre);
+let nombres = datos.map(([nombre]) => nombre);
 let edades = datos.map(([ , edad]) => edad);
 
 console.log(nombres); // ['Juan', 'Ana', 'Luis']
@@ -57,19 +57,20 @@ console.log(edades); // [25, 30, 28]
 console.log("-------------------")
 
 // ------------- 5 ---------------
+// Extraer colores específicos: 
 // Dado el siguiente array, usa desestructuración para asignar el segundo y el cuarto color a variables llamadas color2 y color4. Luego, crea un nuevo array que contenga solo estos dos colores.
 
 const colores2 = ['rojo', 'verde', 'azul', 'amarillo', 'morado'];
 
 let [ , color2, , color4] = colores2;
-let arrayColores = [color2,color4];
+let arrayColores = [color2, color4];
 
-console.log(arrayColores) // ['verde', 'amarillo']
+console.log(arrayColores); // ['verde', 'amarillo']
 console.log("-------------------")
 
+// DESESTRUCTURACIÓN DE OBJETOS
 // ------------- 6 ---------------
-// Desestructuración de Objetos
-// Dado el siguiente objeto, usa desestructuración para extraer las propiedades marca y año en variables separadas. Imprime estas variables y luego crea un nuevo objeto que contenga solo modelo y color
+// Dado el siguiente objeto, usa desestructuración para extraer las propiedades marca y año en variables separadas. Imprime estas variables y luego crea un nuevo objeto que contenga solo modelo y color.
 
 const coche = {
     marca: 'Toyota',
@@ -82,27 +83,27 @@ const coche = {
 // Al acceder a objetos, basta con poner el nombre, el orden da igual
 
 let {marca, modelo} = coche;
-console.log(marca, modelo) // 'Toyota Corolla'
+console.log(marca, modelo); // 'Toyota Corolla'
 
-let coche2 = {marca, modelo}
-console.log(coche2) // { marca: 'Toyota', modelo: 'Corolla' }
-
+let coche2 = {marca, modelo};
+console.log(coche2); // { marca: 'Toyota', modelo: 'Corolla' }
 
 console.log("-------------------")
 
-// EJERCICIOS DE SPREAD Y REST
+// SPREAD OPERATOR
 // ------------- 7 ---------------
 // Ejercicio de Spread: 
 // Dado el array const frutas = ['manzana', 'plátano', 'naranja'], crea un nuevo array que incluya todos los elementos de frutas y los colores ['rojo', 'verde']. Imprime el nuevo array.
 
 const frutas2 = ['manzana', 'plátano', 'naranja'];
-const colores = ['rojo', 'verde']
+const colores = ['rojo', 'verde'];
 
-const arrayFrutasColores = [...frutas, ...colores]
+const arrayFrutasColores = [...frutas2, ...colores];
 console.log(arrayFrutasColores);  // ['manzana', 'plátano', 'naranja', 'rojo', 'verde']
 
 console.log("-------------------")
 
+// REST OPERATOR
 // ------------- 8 ---------------
 // Ejercicio de Rest: Crea una función llamada listaNombres que acepte un número variable de nombres y devuelva un array que contenga todos los nombres. Asegúrate de imprimir el array en la consola.
 
@@ -115,7 +116,7 @@ console.log(lista); // ['Juan', 'Ana', 'Luis', 'María']
 
 console.log("-------------------")
 
-// EJERCICIOS DE DESESTRUCTURACIÓN + SPREAD Y REST
+// COMBINADOS (DESESTRUCTURACIÓN + SPREAD/REST)
 // ------------- 9 ---------------
 // Dado el siguiente objeto, usa desestructuración para extraer nombre y habilidades. Luego, crea un nuevo array que combine las habilidades del empleado con ['CSS', 'HTML'] usando el operador spread. Imprime el nuevo array.
 
