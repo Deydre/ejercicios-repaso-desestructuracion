@@ -1,8 +1,8 @@
 
-### 🌟 Este repositorio contiene apuntes en el README.md y ejercicios prácticos sobre desestructuración, spread y rest en el script.js. 🌟
+**🌟 Este repositorio contiene apuntes en el README.md y ejercicios prácticos sobre desestructuración, spread y rest en el script.js. 🌟**
 
 ------------------
-# Ejercicios de Desestructuración, Spread y Rest en JavaScript
+## Ejercicios de Desestructuración, Spread y Rest en JavaScript
 
 Los ejercicios se dividen en varias secciones:
 
@@ -30,8 +30,8 @@ Los ejercicios se dividen en varias secciones:
 <br>
 <br>
 
-# 🧩 Apuntes/ Desestructuración
-## 🧩 Desestructuración de Arrays
+## 🧩 Apuntes/ Desestructuración
+### 🧩 Desestructuración de Arrays
 La desestructuración de arrays permite extraer valores de un array y asignarlos a variables de manera concisa.
 
 ```javascript
@@ -44,7 +44,7 @@ console.log(a); // 'manzana'
 console.log(b); // 'plátano'
 console.log(c); // 'naranja'
 ```
-## 🧩 Desestructuración de Objetos
+### 🧩 Desestructuración de Objetos
 
 La desestructuración de objetos permite extraer propiedades de un objeto y asignarlas a variables.
 
@@ -62,7 +62,7 @@ console.log(nombre); // 'Juan'
 console.log(edad);   // 25
 ```
 
-## 🧩 Puntos clave y diferencias entre desestructurar Arrays y Objetos:
+### 🧩 Puntos clave y diferencias entre desestructurar Arrays y Objetos:
 En JavaScript, cuando desestructuras objetos, no es necesario usar comas porque las propiedades se identifican por su nombre, no por su posición. En cambio, en un array, los elementos están ordenados, y debes especificar la posición de cada uno. Por eso, en la desestructuración de arrays, se utilizan comas para omitir elementos o seleccionar elementos específicos.
 
 - **Sintaxis**: Utiliza corchetes `[]` para arrays y llaves `{}` para objetos.
@@ -75,9 +75,9 @@ const [a, b, c = 'sin fruta'] = frutas; // c será 'sin fruta' si no hay tercer 
 
 <br>
 
-# 💦 Apuntes/Spread y Rest
+## 💦 Apuntes/Spread y Rest
 
-## 💦 **Spread (`...`)**
+### 💦 **Spread (`...`)**
 
 El operador spread se utiliza para expandir elementos de un iterable (como un array) en lugares donde se esperan múltiples elementos. Se usa frecuentemente para combinar arrays, hacer copias o pasar argumentos a funciones.
 
@@ -89,7 +89,7 @@ const array2 = [4, 5, 6];
 
 const combinado = [...array1, ...array2]; // [1, 2, 3, 4, 5, 6]
 ```
-## 💦 **Rest (`...`)**
+### 💦 **Rest (`...`)**
 
 El operador rest también utiliza `...`, pero se utiliza para agrupar elementos en un array. Se usa en las definiciones de funciones o en la desestructuración para recoger el resto de los elementos.
 
